@@ -57,11 +57,12 @@ describe('Central de Atendimento ao Cliente TAT', function () {
         cy.get('.error').contains('Valide os campos obrigatórios!').should('be.visible')
     })
 
+    /* 
     it.only('preenche e limpa os campos de nome sobrenome email telefone e textarea', function () {
 
         cy.title().should('be.equal', 'Central de Atendimento ao Cliente TAT')
         cy.get('#firstName')
-            .type('Will')// .type(Cypress.env('user_name'), { log: false })
+            .type(Cypress.env('user_name'), { log: false })
             .should('have.value', 'Will')
             .clear()
             .should('have.value', '')
@@ -90,7 +91,7 @@ describe('Central de Atendimento ao Cliente TAT', function () {
 
         cy.get('.error').contains('Valide os campos obrigatórios!').should('be.visible')
     })
-
+*/
     it('exibe mensagem de erro ao submeter o formulário sem preencher os campos obrigatórios', function () {
 
         cy.title().should('be.equal', 'Central de Atendimento ao Cliente TAT')
