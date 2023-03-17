@@ -61,7 +61,7 @@ describe('Central de Atendimento ao Cliente TAT', function () {
 
         cy.title().should('be.equal', 'Central de Atendimento ao Cliente TAT')
         cy.get('#firstName')
-            .type('Will', { log: false })// .type(Cypress.env('user_name'), { log: false })
+            .type('Will')// .type(Cypress.env('user_name'), { log: false })
             .should('have.value', 'Will')
             .clear()
             .should('have.value', '')
