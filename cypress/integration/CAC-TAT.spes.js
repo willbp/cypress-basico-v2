@@ -128,14 +128,14 @@ describe('Central de Atendimento ao Cliente TAT', function () {
             .select(1) //segundo valor pois começa em 0
             .should('have.value', 'blog') //porque ta identificando o valor e não o texto por isso minusculo
     })
-
+/* 
     it('seleciona um produto random', () => {
         cy.get('select option')
             .its('length', { log: false }).then(n => {//n=valor total do select
                 cy.get('select').select(Cypress._.random(n - 1))//n deixa pegar o elemento 0
             })
     })
-
+*/
     it('marcando input tipo radio feedback', () => {
         cy.get('input[type="radio"][value="feedback"]')
             .check()

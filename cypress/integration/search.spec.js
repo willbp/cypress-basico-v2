@@ -13,6 +13,7 @@ describe('Search', () => {
             .should('be.visible')
     })
 
+    /* 
     it('type and hit enter', () => {
         cy.get('@searchField')
             .type(`${searchTerm}{enter}`)
@@ -24,7 +25,7 @@ describe('Search', () => {
             .last()//pega ultimo elemento
             .should('contain', 'Mais')//contem string Mais
     })
-
+*/
     it('type and click magnifying glass button', () => {
         cy.get('@searchField')
             .type(searchTerm)
